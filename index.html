@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Разметка комиксов для портала Bubble</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="shortcut icon" href="pictures/logo.svg" type="image/png">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Разметка комиксов для портала Bubble</h1>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Разметка комиксов для портала Bubble</h2>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg" alt="Страница beta.bubble.ru">
+            <figcaption class="copyright right white">
+                <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
+            </figcaption>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Поставленая задача: создать раздел редактирования разметки</h2>
+        <ol>
+            <li>Редактирование сингла</li>
+            <li>Список страниц</li>
+            <li>Рабочая зона для отрисовки</li>
+            <li>Склейка страниц, создание разворотов</li>
+            <li>Перемещение страниц</li>
+            <li>Удаление страниц</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Сроки:</h2>
+        <h2 class="next">
+            2 недели!
+        </h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/maket.jpg" alt="Макет разметки">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Выбор библиотек</h2>
+        <div class="columns two">
+          <ol class="next">
+              <li>Загрузчик для страниц</li>
+              <li>Дропзона для перемещения страниц</li>
+              <li>Работа со страницей (canvas ?)</li>
+              <li>Zoom ?</li>
+          </ol>
+
+          <ol class="next">
+              <li>@shopify/polaris</li>
+              <li>react-dnd</li>
+              <li>konva, react-konva</li>
+              <li>Отказать</li>
+          </ol>
+        </div>
+    </section>
+
+    <section class="slide">
+        <video
+          style="height: calc(100% - 30px); width: 100%"
+          src="pictures/dnd.mp4"
+          alt="Перемещение страниц"
+          autoplay
+          controls="controls"
+        />
+    </section>
+
+    <section class="slide">
+        <h2>Структура</h2>
+        <h3>На бекенде:</h3>
+        <ul class="next">
+            <li>Левая страница - <code>position: 'a'</code></li>
+            <li>Правая страница - <code>position: 'b'</code></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Структура</h2>
+      <h3>На фронте:</h3>
+      <ul class="next">
+          <pre>
+              <code>[{</code>
+              <code>  id: 'id',</code>
+              <code>  pages: [{page1}, {page2}]</code>
+              <code>}]</code>
+
+          </pre>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Перемещение</h2>
+
+      <ul class="next">
+        <li>Target - синие полоски</li>
+        <li>Source - страницы</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Отрисовка фреймов</h2>
+
+      <ol class="next">
+        <li>Отрисовать страницу (canvas)</li>
+        <li>Отрисовать фрейм на этой странице</li>
+        <li>Сохранить фрейм относительно размеров страницы в нужном формате</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <video
+        style="height: calc(100% - 30px); width: 100%"
+        src="pictures/one-page.mov"
+        alt="отрисовка фреймов"
+        autoplay
+        controls="controls"
+      />
+    </section>
+
+    <section class="slide">
+      <h3>Ошибки / просьбы<h3>
+
+      <ol>
+        <li></li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <video
+        style="height: calc(100% - 30px); width: 100%"
+        src="pictures/spread.mov"
+        alt="отрисовка фреймов"
+        autoplay
+        controls="controls"
+      />
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/shower-core/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
