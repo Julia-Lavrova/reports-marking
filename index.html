@@ -13,7 +13,6 @@
     </style>
 </head>
 <body class="shower list">
-
     <header class="caption">
         <h1>Разметка комиксов для портала Bubble</h1>
     </header>
@@ -63,7 +62,11 @@
     <section class="slide">
         <h2>Сроки:</h2>
         <h2 class="next">
-            2 недели!
+            2 недели
+        </h2>
+
+        <h2 class="next">
+            1 разработчик
         </h2>
     </section>
 
@@ -86,10 +89,36 @@
           <ol class="next">
               <li>@shopify/polaris</li>
               <li>react-dnd</li>
-              <li>konva, react-konva</li>
+              <li style="margin-top: 50px">konva, react-konva</li>
               <li>Отказать</li>
           </ol>
         </div>
+    </section>
+
+    <section class="slide">
+        <h2>Риски</h2>
+
+        <ol>
+            <li class="next">Новый разработчик на проекте</li>
+            <li class="next">Плохое коммуникация между разработчиками</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Первые проблемы</h2>
+
+        <ol>
+            <li class="next">Страница разметки не вписывается в дизайн систему</li>
+            <li class="next">Структура хранения...</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <img
+          class="cover"
+          src="pictures/rickAndMorty.gif"
+          alt="Боль"
+        />
     </section>
 
     <section class="slide">
@@ -104,11 +133,57 @@
 
     <section class="slide">
         <h2>Структура</h2>
-        <h3>На бекенде:</h3>
-        <ul class="next">
+        <h3>Раньше была:</h3>
+        <ul>
             <li>Левая страница - <code>position: 'a'</code></li>
             <li>Правая страница - <code>position: 'b'</code></li>
+            <li>Изолированная страница - <code>position: 'x'</code></li>
+            <li>Склеенные страницы (разворот) - <code>position: 'ab'</code></li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Структура</h2>
+        <img
+          class="cover"
+          src="pictures/structure.png"
+          alt="Структура"
+          style="margin-top: 50px"
+        />
+    </section>
+
+    <section class="slide">
+        <img
+          class="cover"
+          src="pictures/variant1.png"
+          alt="Вариант 1"
+        />
+    </section>
+
+    <section class="slide">
+      <figure>
+          <img class="cover" src="pictures/run.gif" alt="Взаимодействие фронтенда и бекенда">
+          <figcaption class="copyright right white">
+              <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
+          </figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure>
+          <img class="cover" src="pictures/communication.jpg" alt="Взаимодействие фронтенда и бекенда">
+          <figcaption class="copyright right white">
+              <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
+          </figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+        <img
+          class="cover"
+          src="pictures/rightVariant2.png"
+          alt="Вариант 2"
+        />
     </section>
 
     <section class="slide">
@@ -118,9 +193,8 @@
           <pre>
               <code>[{</code>
               <code>  id: 'id',</code>
-              <code>  pages: [{page1}, {page2}]</code>
+              <code>  pages: [{page1}, {page2}] // spread</code>
               <code>}]</code>
-
           </pre>
       </ul>
     </section>
@@ -158,7 +232,7 @@
       <h3>Ошибки / просьбы<h3>
 
       <ol>
-        <li></li>
+        <li>Склейка разворотов</li>
       </ol>
     </section>
 
@@ -170,6 +244,14 @@
         autoplay
         controls="controls"
       />
+    </section>
+
+    <section class="slide">
+      <h3>Ошибки / просьбы<h3>
+
+      <ol>
+        <li>Склейка разворотов</li>
+      </ol>
     </section>
 
     <footer class="badge">
