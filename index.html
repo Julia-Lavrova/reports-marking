@@ -79,64 +79,131 @@
     </section>
 
     <section class="slide">
-        <h2>Сроки:</h2>
-        <h2 class="next">
-            2 недели
-        </h2>
-
-        <h2 class="next">
-            1 разработчик
-        </h2>
+        <h2 class="shout" style="font-size: 100px">Срок - 2 недели <br /> Силы - 1 разработчик</h2>
     </section>
 
     <section class="slide">
+        <h2 class="shout" style="font-size: 100px">Выбор библиотек</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px">Загрузчик для страниц - <a href="https://polaris.shopify.com/" target="_blank">@shopify/polaris</a></h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px">Дропзона для перемещения страниц - <a href="https://react-dnd.github.io/react-dnd/" target="_blank">react-dnd</a></h2>
+
         <figure>
-            <img class="cover" src="pictures/maket.jpg" alt="Макет разметки">
+            <img
+                class="cover"
+                src="pictures/abramov.jpg"
+                alt="Ден Абрамов"
+                style="position: absolute; bottom: -10%; right: -10%; left:  auto; top: auto; width: 300px"
+            />
         </figure>
     </section>
 
     <section class="slide">
-        <h2>Выбор библиотек</h2>
-        <div class="columns two">
-          <ol class="next">
-              <li>Загрузчик для страниц</li>
-              <li>Дропзона для перемещения страниц</li>
-              <li>Работа со страницей (canvas ?)</li>
-              <li>Zoom ?</li>
-          </ol>
-
-          <ol class="next">
-              <li>@shopify/polaris</li>
-              <li>react-dnd</li>
-              <li style="margin-top: 50px">konva, react-konva</li>
-              <li>Отказать</li>
-          </ol>
-        </div>
+        <h2 class="shout" style="font-size: 80px; width: 70%; left: 50%; transform: translate(-50%, -50%);">Работа со страницей - <a href="https://github.com/konvajs" target="_blank">konva</a>, <a href="https://github.com/konvajs/react-konva" target="_blank">react-konva</a></h2>
     </section>
 
     <section class="slide">
-        <h2>Риски</h2>
-
-        <ol>
-            <li class="next">Новый разработчик на проекте</li>
-            <li class="next">Плохое коммуникация между разработчиками</li>
-        </ol>
+        <h2 class="shout" style="font-size: 80px;">Зум - не делаем</h2>
     </section>
 
     <section class="slide">
-        <h2>Первые проблемы</h2>
+        <h2 class="shout" style="font-size: 100px">Первые проблемы</h2>
+    </section>
 
-        <ol>
-            <li class="next">Страница разметки не вписывается в дизайн систему</li>
-            <li class="next">Структура хранения...</li>
-        </ol>
+    <section class="slide clear" id="cover" style="background: #9bc3dd;">
+        <figure>
+            <img class="cover" src="pictures/sorter.png" alt="Страница разметки не вписывается в дизайн систему" />
+        </figure>
+    </section>
+
+    <section class="slide clear" id="cover" style="background: #383430;">
+        <figure>
+            <img class="cover" src="pictures/disconnect.jpg" alt="Плохая коммуникация и как следствие - проблемы со структурой данных" />
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <img
+          class="cover"
+          src="pictures/structure.png"
+          alt="Старая структура данных"
+        />
+    </section>
+
+    <section class="slide clear" style="background: #333254;">
+        <img
+          class="cover"
+          src="pictures/x.jpg"
+          alt="пример структуры х"
+        />
+    </section>
+
+    <section class="slide clear">
+        <img
+          class="cover"
+          src="pictures/a_b.jpg"
+          alt="пример структуры a и b"
+        />
+    </section>
+
+    <section class="slide clear" style="background: #6d6a65;">
+        <img
+          class="cover"
+          src="pictures/ab.jpg"
+          alt="пример структуры ab"
+        />
+    </section>
+
+    <section class="slide clear">
+        <figure>
+            <img
+              class="cover"
+              src="pictures/firstVersion.png"
+              alt="Первая версия структуры"
+            />
+
+            <ul>
+                <li class="next" style="position: absolute;bottom: 10%;right: 10%;list-style-type: none;">
+                    Спойлер: так думала я
+                </li>
+            </ul>
+        </figure>
+    </section>
+
+    <section class="slide clear" style="background: #e4f5fd;">
+        <figure>
+            <img class="cover" src="pictures/bug.png" alt="Бага">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <figure>
+            <img
+              class="cover"
+              src="pictures/weAgreed.jpg"
+              alt="Мы же договаривались!"
+            />
+        </figure>
     </section>
 
     <section class="slide">
         <img
           class="cover"
-          src="pictures/rickAndMorty.gif"
-          alt="Боль"
+          src="pictures/rightVariant2.png"
+          alt="Вариант 2"
+        />
+    </section>
+
+    <section class="slide" style="background: #f9f9f9;">
+        <img
+          class="cover"
+          src="pictures/look.png"
+          alt="Чего непонятного то?!"
         />
     </section>
 
@@ -147,61 +214,6 @@
           alt="Перемещение страниц"
           autoplay
           controls="controls"
-        />
-    </section>
-
-    <section class="slide">
-        <h2>Структура</h2>
-        <h3>Раньше была:</h3>
-        <ul>
-            <li>Левая страница - <code>position: 'a'</code></li>
-            <li>Правая страница - <code>position: 'b'</code></li>
-            <li>Изолированная страница - <code>position: 'x'</code></li>
-            <li>Склеенные страницы (разворот) - <code>position: 'ab'</code></li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Структура</h2>
-        <img
-          class="cover"
-          src="pictures/structure.png"
-          alt="Структура"
-          style="margin-top: 50px"
-        />
-    </section>
-
-    <section class="slide">
-        <img
-          class="cover"
-          src="pictures/variant1.png"
-          alt="Вариант 1"
-        />
-    </section>
-
-    <section class="slide">
-      <figure>
-          <img class="cover" src="pictures/run.gif" alt="Взаимодействие фронтенда и бекенда">
-          <figcaption class="copyright right white">
-              <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
-          </figcaption>
-      </figure>
-    </section>
-
-    <section class="slide">
-      <figure>
-          <img class="cover" src="pictures/communication.jpg" alt="Взаимодействие фронтенда и бекенда">
-          <figcaption class="copyright right white">
-              <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
-          </figcaption>
-      </figure>
-    </section>
-
-    <section class="slide">
-        <img
-          class="cover"
-          src="pictures/rightVariant2.png"
-          alt="Вариант 2"
         />
     </section>
 
