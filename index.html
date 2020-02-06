@@ -166,13 +166,17 @@
               src="pictures/firstVersion.png"
               alt="Первая версия структуры"
             />
-
-            <ul>
-                <li class="next" style="position: absolute;bottom: 10%;right: 10%;list-style-type: none;">
-                    Спойлер: так думала я
-                </li>
-            </ul>
         </figure>
+    </section>
+
+    <section class="slide clear">
+        <video
+          style="height: 100%; width: 100%"
+          src="pictures/firstVersion.mp4"
+          alt="Перемещение страниц - демо"
+          autoplay
+          controls="controls"
+        />
     </section>
 
     <section class="slide clear" style="background: #e4f5fd;">
@@ -207,11 +211,11 @@
         />
     </section>
 
-    <section class="slide">
+    <section class="slide clear">
         <video
-          style="height: calc(100% - 30px); width: 100%"
-          src="pictures/dnd.mp4"
-          alt="Перемещение страниц"
+          style="height: 100%; width: 100%"
+          src="pictures/rightVersion.mp4"
+          alt="Перемещение страниц правильно - демо"
           autoplay
           controls="controls"
         />
@@ -220,7 +224,7 @@
     <section class="slide">
       <h2>Структура</h2>
       <h3>На фронте:</h3>
-      <ul class="next">
+      <ul>
           <pre>
               <code>[{</code>
               <code>  id: 'id',</code>
@@ -231,58 +235,41 @@
     </section>
 
     <section class="slide">
-      <h2>Перемещение</h2>
-
-      <ul class="next">
-        <li>Target - синие полоски</li>
-        <li>Source - страницы</li>
+      <h2>Структура фрейма</h2>
+      <ul>
+          <pre>
+              <code>{</code>
+              <code>  x: 0,</code>
+              <code>  y: 0,</code>
+              <code>  w: 300,</code>
+              <code>  h: 200,</code>
+              <code>}</code>
+          </pre>
       </ul>
     </section>
 
-    <section class="slide">
-      <h2>Отрисовка фреймов</h2>
-
-      <ol class="next">
-        <li>Отрисовать страницу (canvas)</li>
-        <li>Отрисовать фрейм на этой странице</li>
-        <li>Сохранить фрейм относительно размеров страницы в нужном формате</li>
-      </ol>
+    <section class="slide clear" style="background: #e4f5fd;">
+        <figure>
+            <img class="cover" src="pictures/done.jpg" alt="Вы великолепны!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <video
-        style="height: calc(100% - 30px); width: 100%"
-        src="pictures/one-page.mov"
-        alt="отрисовка фреймов"
-        autoplay
-        controls="controls"
-      />
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/correct.png" alt="Я вам правочки приготовил!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <h3>Ошибки / просьбы<h3>
-
-      <ol>
-        <li>Склейка разворотов</li>
-      </ol>
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/offense.png" alt="Обида!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <video
-        style="height: calc(100% - 30px); width: 100%"
-        src="pictures/spread.mov"
-        alt="отрисовка фреймов"
-        autoplay
-        controls="controls"
-      />
-    </section>
-
-    <section class="slide">
-      <h3>Ошибки / просьбы<h3>
-
-      <ol>
-        <li>Склейка разворотов</li>
-      </ol>
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/end.jpg" alt="Спасибо за внимание!">
+        </figure>
     </section>
 
     <footer class="badge">
