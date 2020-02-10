@@ -11,10 +11,23 @@
             --slide-ratio: calc(16 / 9);
         }
 
-        .cover {
+        .cover.cover_fill {
           height: 100%;
+          width: 100%;
           max-height: none;
           max-width: none;
+        }
+
+        .cover.cover_circle {
+          position: absolute;
+          bottom: -10%;
+          right: -5%;
+          left: auto;
+          top: auto;
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 50%;
         }
     </style>
 </head>
@@ -60,7 +73,7 @@
     <section class="slide clear" id="cover">
         <figure>
             <img class="cover" src="pictures/markingPage.png" alt="Пустая страница разметки комиксов">
-            <figcaption class="copyright right white">
+            <figcaption class="copyright right">
                 <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
             </figcaption>
         </figure>
@@ -69,7 +82,7 @@
     <section class="slide clear" id="cover">
         <figure>
             <img class="cover" src="pictures/modalMaket.png" alt="Модалка редактирования комикса">
-            <figcaption class="copyright right white">
+            <figcaption class="copyright right">
                 <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
             </figcaption>
         </figure>
@@ -78,7 +91,7 @@
     <section class="slide clear" id="cover">
         <figure>
             <img class="cover" src="pictures/maket.png" alt="Страница разметки комиксов">
-            <figcaption class="copyright right white">
+            <figcaption class="copyright right">
                 <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
             </figcaption>
         </figure>
@@ -101,10 +114,9 @@
 
         <figure>
             <img
-                class="cover"
+                class="cover cover_circle"
                 src="pictures/abramov.jpg"
                 alt="Ден Абрамов"
-                style="position: absolute; bottom: -10%; right: -10%; left:  auto; top: auto; width: 300px"
             />
         </figure>
     </section>
@@ -129,7 +141,7 @@
 
     <section class="slide clear" id="cover" style="background: #383430;">
         <figure>
-            <img class="cover" src="pictures/disconnect.jpg" alt="Плохая коммуникация и как следствие - проблемы со структурой данных" />
+            <img class="cover cover_fill" src="pictures/disconnect.jpg" alt="Плохая коммуникация и как следствие - проблемы со структурой данных" />
         </figure>
     </section>
 
@@ -187,14 +199,14 @@
 
     <section class="slide clear" style="background: #e4f5fd;">
         <figure>
-            <img class="cover" src="pictures/bug.png" alt="Бага">
+            <img class="cover cover_fill" src="pictures/bug.png" alt="Бага">
         </figure>
     </section>
 
     <section class="slide clear">
         <figure>
             <img
-              class="cover"
+              class="cover cover_fill"
               src="pictures/weAgreed.jpg"
               alt="Мы же договаривались!"
             />
@@ -211,7 +223,7 @@
 
     <section class="slide" style="background: #f9f9f9;">
         <img
-          class="cover"
+          class="cover cover_fill"
           src="pictures/look.png"
           alt="Чего непонятного то?!"
         />
@@ -256,19 +268,19 @@
 
     <section class="slide clear" style="background: #e4f5fd;">
         <figure>
-            <img class="cover" src="pictures/done.jpg" alt="Вы великолепны!">
+            <img class="cover cover_fill" src="pictures/done.jpg" alt="Вы великолепны!">
         </figure>
     </section>
 
     <section class="slide clear" style="background: #7e8268;">
         <figure>
-            <img class="cover" src="pictures/correct.png" alt="Я вам правочки приготовил!">
+            <img class="cover cover_fill" src="pictures/correct.png" alt="Я вам правочки приготовил!">
         </figure>
     </section>
 
     <section class="slide clear" style="background: #7e8268;">
         <figure>
-            <img class="cover" src="pictures/offense.png" alt="Обида!">
+            <img class="cover cover_fill" src="pictures/offense.png" alt="Обида!">
         </figure>
     </section>
 
