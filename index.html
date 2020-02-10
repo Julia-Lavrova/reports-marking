@@ -13,19 +13,18 @@
     </style>
 </head>
 <body class="shower list">
-
     <header class="caption">
         <h1>Разметка комиксов для портала Bubble</h1>
     </header>
 
-    <section class="slide" id="cover">
+    <section class="slide clear" id="cover">
         <h2>Разметка комиксов для портала Bubble</h2>
         <figure>
             <img class="cover" src="pictures/cover.jpg" alt="Страница beta.bubble.ru">
-            <figcaption class="copyright right white">
-                <a href="https://github.com/Julia-Lavrova">© Julia Lavrova</a>
-            </figcaption>
+
+            <p><a href="https://github.com/Julia-Lavrova">Юлия Авдеева</a>, <a href="https://neuron.digital/">Neuron.Digital</a></p>
         </figure>
+
         <style>
             #cover h2 {
                 margin: 30px 0 0;
@@ -49,127 +48,228 @@
     </section>
 
     <section class="slide">
-        <h2>Поставленая задача: создать раздел редактирования разметки</h2>
-        <ol>
-            <li>Редактирование сингла</li>
-            <li>Список страниц</li>
-            <li>Рабочая зона для отрисовки</li>
-            <li>Склейка страниц, создание разворотов</li>
-            <li>Перемещение страниц</li>
-            <li>Удаление страниц</li>
-        </ol>
+        <h2 class="shout" style="font-size: 100px">ЗАДАЧА</h2>
     </section>
 
-    <section class="slide">
-        <h2>Сроки:</h2>
-        <h2 class="next">
-            2 недели!
-        </h2>
-    </section>
-
-    <section class="slide">
+    <section class="slide clear" id="cover">
         <figure>
-            <img class="cover" src="pictures/maket.jpg" alt="Макет разметки">
+            <img class="cover" src="pictures/markingPage.png" alt="Пустая страница разметки комиксов">
+            <figcaption class="copyright right white">
+                <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide clear" id="cover">
+        <figure>
+            <img class="cover" src="pictures/modalMaket.png" alt="Модалка редактирования комикса">
+            <figcaption class="copyright right white">
+                <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide clear" id="cover">
+        <figure>
+            <img class="cover" src="pictures/maket.png" alt="Страница разметки комиксов">
+            <figcaption class="copyright right white">
+                <a href="https://neuron.digital/requirements/design">© design department of Neuron Digital</a>
+            </figcaption>
         </figure>
     </section>
 
     <section class="slide">
-        <h2>Выбор библиотек</h2>
-        <div class="columns two">
-          <ol class="next">
-              <li>Загрузчик для страниц</li>
-              <li>Дропзона для перемещения страниц</li>
-              <li>Работа со страницей (canvas ?)</li>
-              <li>Zoom ?</li>
-          </ol>
-
-          <ol class="next">
-              <li>@shopify/polaris</li>
-              <li>react-dnd</li>
-              <li>konva, react-konva</li>
-              <li>Отказать</li>
-          </ol>
-        </div>
+        <h2 class="shout" style="font-size: 100px">Срок - 2 недели <br /> Силы - 1 разработчик</h2>
     </section>
 
     <section class="slide">
+        <h2 class="shout" style="font-size: 100px">Выбор библиотек</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px">Загрузчик для страниц - <a href="https://polaris.shopify.com/" target="_blank">@shopify/polaris</a></h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px">Дропзона для перемещения страниц - <a href="https://react-dnd.github.io/react-dnd/" target="_blank">react-dnd</a></h2>
+
+        <figure>
+            <img
+                class="cover"
+                src="pictures/abramov.jpg"
+                alt="Ден Абрамов"
+                style="position: absolute; bottom: -10%; right: -10%; left:  auto; top: auto; width: 300px"
+            />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px; width: 70%; left: 50%; transform: translate(-50%, -50%);">Работа со страницей - <a href="https://github.com/konvajs" target="_blank">konva</a>, <a href="https://github.com/konvajs/react-konva" target="_blank">react-konva</a></h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 80px;">Зум - не делаем</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 100px">Первые проблемы</h2>
+    </section>
+
+    <section class="slide clear" id="cover" style="background: #9bc3dd;">
+        <figure>
+            <img class="cover" src="pictures/sorter.png" alt="Страница разметки не вписывается в дизайн систему" />
+        </figure>
+    </section>
+
+    <section class="slide clear" id="cover" style="background: #383430;">
+        <figure>
+            <img class="cover" src="pictures/disconnect.jpg" alt="Плохая коммуникация и как следствие - проблемы со структурой данных" />
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <img
+          class="cover"
+          src="pictures/structure.png"
+          alt="Старая структура данных"
+        />
+    </section>
+
+    <section class="slide clear" style="background: #333254;">
+        <img
+          class="cover"
+          src="pictures/x.jpg"
+          alt="пример структуры х"
+        />
+    </section>
+
+    <section class="slide clear">
+        <img
+          class="cover"
+          src="pictures/a_b.jpg"
+          alt="пример структуры a и b"
+        />
+    </section>
+
+    <section class="slide clear" style="background: #6d6a65;">
+        <img
+          class="cover"
+          src="pictures/ab.jpg"
+          alt="пример структуры ab"
+        />
+    </section>
+
+    <section class="slide clear">
+        <figure>
+            <img
+              class="cover"
+              src="pictures/firstVersion.png"
+              alt="Первая версия структуры"
+            />
+        </figure>
+    </section>
+
+    <section class="slide clear">
         <video
-          style="height: calc(100% - 30px); width: 100%"
-          src="pictures/dnd.mp4"
-          alt="Перемещение страниц"
+          style="height: 100%; width: 100%"
+          src="pictures/firstVersion.mp4"
+          alt="Перемещение страниц - демо"
+          autoplay
+          controls="controls"
+        />
+    </section>
+
+    <section class="slide clear" style="background: #e4f5fd;">
+        <figure>
+            <img class="cover" src="pictures/bug.png" alt="Бага">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <figure>
+            <img
+              class="cover"
+              src="pictures/weAgreed.jpg"
+              alt="Мы же договаривались!"
+            />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <img
+          class="cover"
+          src="pictures/rightVariant2.png"
+          alt="Вариант 2"
+        />
+    </section>
+
+    <section class="slide" style="background: #f9f9f9;">
+        <img
+          class="cover"
+          src="pictures/look.png"
+          alt="Чего непонятного то?!"
+        />
+    </section>
+
+    <section class="slide clear">
+        <video
+          style="height: 100%; width: 100%"
+          src="pictures/rightVersion.mp4"
+          alt="Перемещение страниц правильно - демо"
           autoplay
           controls="controls"
         />
     </section>
 
     <section class="slide">
-        <h2>Структура</h2>
-        <h3>На бекенде:</h3>
-        <ul class="next">
-            <li>Левая страница - <code>position: 'a'</code></li>
-            <li>Правая страница - <code>position: 'b'</code></li>
-        </ul>
-    </section>
-
-    <section class="slide">
       <h2>Структура</h2>
       <h3>На фронте:</h3>
-      <ul class="next">
+      <ul>
           <pre>
               <code>[{</code>
               <code>  id: 'id',</code>
-              <code>  pages: [{page1}, {page2}]</code>
+              <code>  pages: [{page1}, {page2}] // spread</code>
               <code>}]</code>
-
           </pre>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>Перемещение</h2>
-
-      <ul class="next">
-        <li>Target - синие полоски</li>
-        <li>Source - страницы</li>
+      <h2>Структура фрейма</h2>
+      <ul>
+          <pre>
+              <code>{</code>
+              <code>  x: 0,</code>
+              <code>  y: 0,</code>
+              <code>  w: 300,</code>
+              <code>  h: 200,</code>
+              <code>}</code>
+          </pre>
       </ul>
     </section>
 
-    <section class="slide">
-      <h2>Отрисовка фреймов</h2>
-
-      <ol class="next">
-        <li>Отрисовать страницу (canvas)</li>
-        <li>Отрисовать фрейм на этой странице</li>
-        <li>Сохранить фрейм относительно размеров страницы в нужном формате</li>
-      </ol>
+    <section class="slide clear" style="background: #e4f5fd;">
+        <figure>
+            <img class="cover" src="pictures/done.jpg" alt="Вы великолепны!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <video
-        style="height: calc(100% - 30px); width: 100%"
-        src="pictures/one-page.mov"
-        alt="отрисовка фреймов"
-        autoplay
-        controls="controls"
-      />
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/correct.png" alt="Я вам правочки приготовил!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <h3>Ошибки / просьбы<h3>
-
-      <ol>
-        <li></li>
-      </ol>
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/offense.png" alt="Обида!">
+        </figure>
     </section>
 
-    <section class="slide">
-      <video
-        style="height: calc(100% - 30px); width: 100%"
-        src="pictures/spread.mov"
-        alt="отрисовка фреймов"
-        autoplay
-        controls="controls"
-      />
+    <section class="slide clear" style="background: #7e8268;">
+        <figure>
+            <img class="cover" src="pictures/end.jpg" alt="Спасибо за внимание!">
+        </figure>
     </section>
 
     <footer class="badge">
